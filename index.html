@@ -3,19 +3,94 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="index.css">
-    <title>Portfolio</title>
+    <link
+    href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
+    rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/boxicons/2.1.0/dist/boxicons.js">
+    <title>Document</title>
 </head>
 <body>
-    <header><div class="nav"><div class="left" style="margin-top: 15px;padding: 15px 15px 15px 15px; background-color: black;"><h5>SukanyaDas</h5></div>
-        <div class="right">
-            <div class="hov" style="margin: 15px 25px 0px 25px ; ;"><h4>Home</h4></div>
-            <div class="hov" style="margin: 15px 25px 0px 25px ;"><h4>About Me</h4></div>
-            <div class="hov" style="margin: 15px 25px 0px 25px ;"><h4>Education</h4></div>
-            <div class="hov" style="margin: 15px 25px 0px 25px ;"><h4>Contact Me</h4></div>
+        <div class="box"><span>Hi I am Sukanya Das I am a</span> <br><span style="color: rgb(38, 160, 231);">Web Developer</span><span id="element"></span></div>
+        <div class="nav">
+
+            <div class="contain">
+              <ul id="menu">
+                <li><a href="#one"><p id="home">About Me</p></a></li>
+                <li> <a href="#two"><p id="home"> Education</p></a></li>
+                <li> <a href="#pro"><p id="home"> Projects</p></a></li>
+                <li><a href=""><p id="home">Contact Me</p> </a></li>
+                <li> <a href="files/Sukanya Das Resume (1).pdf" Download><div class="btn">Download CV</div>  </a> </li>
+            </ul>  
+            </div>
+            <div class="main">
+              <div class="about me">
+                <ul>
+                  <h1 style= " color: white; font-size: 2rem;margin-left: 150px;">About Me</h1>
+                  <li class="card" id="one"><br><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum quo quisquam facilis ipsum veritatis esse ad fugiat totam nesciunt, accusantium consectetur. Quisquam rerum quidem exercitationem eum rem molestiae voluptas velit!</p></li>
+                </ul>
+              </div>
+                <div class="education">
+                 
+                    <ul id="two">
+                      <h1 style="color: white; text-align: center; font-size: 2erm; margin-left: 150px;">Education</h1>
+                    <li class="card" id="edu"><p>I am currently completed my B.tech IN information Technology from JIS College of Engineering. </p></li>
+                    <li class="card" id="edu"><p>I have completed my highscool from Shyamnagar Balika Vidyalaya</p></li>
+                    <li class="card" id="edu"><p>I have completed my tentyh from Shyamnagar Balika Vidyalaya</p></li></ul>
+                </div>
+
+
+                <div class="project">
+
+
+                  <ul id="three">
+                    <h1 style="color: white; font-size: 2erm; margin-left: 150px; ">Projects</h1>
+                    <li class="card" id="pro"><p><h1 style="font-size: 1.2rem; ">Navigation for blind person using smart cap</h1>
+                      This model is a simple and easy-to-use device that blind individuals can easily access, given its low cost, simplicity, and accessibility. The prototype has undergone testing and is estimated to be around. A precision of 95% in detecting objects. The preview of this paper does not contain any details about the extensive testing that the prototype underwent, but rather concentrates on its design.</p></li>
+                    <li class="card" id="pro"><p><h1 style="font-size: 1.2rem; ">Smart irrigation system with remote monitoring facilities</h1>Smart irrigation systems offer a variety of advantages over traditional irrigation systems. Smart irrigation systems can optimize water levels based on things such as soil moisture and weather predictions. This is done with wireless moisture sensors that communicate with the smart irrigation controls and help inform the system whether or not the landscape is in need of water.
+                    </p>
+                      </li>
+                    <li class="card" id="pro"><p><h1 style="font-size: 1.2rem; ">Virtual mouse
+                      using OpenCV</h1>
+                      AI virtual mouse using hand gestures is an innovative and exciting technology that has the potential to revolutionize the way we interact with computers. Here with the aid of a real-time camera, we have created a system to manage the mouse pointer and carry out its function.It offers users a more natural, intuitive, and accessible way to control the cursor on the screen, without the need for a traditional input device, a mouse.</p></li>
+                    <li class="card" id="pro"><p><h1 tyle="font-size: 1.2rem; ">Breast Cancer Classification & Detection</h1>The objective of using machine learning for breast cancer prediction is to develop predictive models that can accurately classify patients into different risk categories based on their likelihood of developing breast cancer. This involves leveraging machine learning algorithms to analyze diverse datasets containing features such as demographic information, medical history, genetic markers, imaging results, and lifestyle factors.</p></li>
+                    <li class="card" id="pro"><p><h1 style="font-size: 1.2rem; ">AUrdino Calculator</h1> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus inventore sequi, est ipsa eum veritatis, reiciendis deserunt amet odit aperiam voluptas iure dignissimos possimus fugit commodi illo sed, exercitationem nostrum.</p></li>
+                  </ul>
+                </div>
+                 
+            </div>
         </div>
-    </div>
-</header>
-<div class="body"><div class="picture"></div></div>
+        <br><br>
+        <hr style="width: 70%; color: transparent;">
+
+        <div class="rest">
+          <div class="b1"><a href="skill"><H1 id="caraousol">Skills</H1></a></div>
+          <div class="b2"><H1 id="caraousol">Hobbies</H1></div> <div class="b3"><H1 id="caraousol">Experiences</H1></div>
+        </div>
+        <div class="wrapper">
+          <div class="Card"   id="skill"><p>
+            C 
+            <br>
+            Python
+            <br>
+            html 
+            <br>
+            Css
+            <br> 
+            Javascript
+          </Canvas></p></div>
+          
+         
+          
+        </div>
+
+        
+
+    <script>var typed = new Typed('#element', {
+        strings: [ 'Student.','<i> passionate </i> Web Developer.', ' Software Engineer.'],
+        typeSpeed: 50,
+      });</script>
+    
+    <script src="script.js"></script>
 </body>
 </html>

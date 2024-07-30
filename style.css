@@ -1,0 +1,196 @@
+.box{
+  height: 200px;
+  width: 100%;
+  
+}
+a{
+  text-decoration: none;
+  display: grid;
+  row-gap: 10px;
+  height: 50px;
+  width: 50px;
+}
+  #home{
+    text-decoration: none;
+    font-size: 1.2 rem;
+    display: grid;
+    color: rgb(180, 177, 177);
+    cursor: pointer;
+  }
+  #home:hover{
+    color: rgb(251, 252, 255);
+  }
+  .nav{
+    display: flex;
+    column-gap:500px ;
+  
+  }
+  * {
+    box-sizing: border-box;
+  }
+  
+  body {
+    min-height: 100vh;
+    background-color: #0f172a;
+    overflow-x: hidden;
+  }
+  
+  ul {
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+    flex-wrap: wrap;
+    gap: 5rem;
+    width: 100%;
+  }
+  
+  .main {
+    width: 80ch;
+    max-width: 100%;
+  
+  }
+  
+  .card {
+    background: hsl(0 0% 10%);
+  
+    width: 200px;
+    aspect-ratio: 4 / 3;
+    position: relative;
+    transition: background 0.1s;
+    float: right;
+    margin-left: 500px;
+  }
+  
+  .card:hover {
+    --active: 1;
+    
+  }
+  
+  .card:after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background:
+      radial-gradient(circle at calc(var(--x) * 1px) calc(var(--y) * 1px), hsl(0 100% 100% / 0.15), transparent 15vmin);
+    background-attachment: fixed;
+    opacity: var(--active, 0);
+    transition: opacity 0.10s;
+    pointer-events: none;
+  }
+  
+  .card:before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background:
+      radial-gradient(circle at calc(var(--x) * 1px) calc(var(--y) * 1px), hsl(0 0% 100% / 0.5), transparent 15vmin),
+      transparent;
+    background-attachment: fixed;
+    pointer-events: none;
+    mask:
+      linear-gradient(white, white) 50% 0 / 100% 10px no-repeat,
+      linear-gradient(white, white) 50% 100% / 100% 10px no-repeat,
+      linear-gradient(white, white) 0 50% / 4px 100% no-repeat,
+      linear-gradient(white, white) 100% 50% / 10px 100% no-repeat;
+  }
+  
+  span {
+    font-family: sans-serif, system-ui;
+    bottom: 0.65rem;
+    right: 0.65rem;
+    font-weight: bold;
+    font-size: 2rem;
+    color: hsl(0 0% 100%);
+  }
+  p{
+    color: rgb(176, 175, 175);
+  }
+  .btn{
+    height: 50px;
+    width: 200px;
+    border: 2px solid white ;
+    background-color: transparent;
+    color: white;
+    text-align: center;
+    padding-top: 15px;
+    margin-top: 20px;
+  }
+  .btn:hover{
+    background-color: rgba(255, 255, 255, 0.112);
+  }
+  .contain{
+    display: grid;
+  }
+
+#one{
+  width: 600px;
+  height: 200px;
+  color: white;
+}
+
+
+.education{
+  display: flex;
+  float: right;
+  margin-top: 100px;
+
+}
+
+#edu{
+  width: 600px;
+  height: 200px;
+  color: white;
+  text-align: center;
+  column-gap: 100px;
+
+}
+li{
+  gap: 50px;
+}
+#pro{
+  width: 600px;
+  height: 200px;
+  color: #B0AFAF;
+  text-align: center;
+  gap: 100px;
+
+}
+.project{
+  margin-top: 1100px;
+}
+.rest{
+  display: flex;
+  gap: 100px;
+  justify-content: center;
+
+}
+.b1{
+  height: 50px;
+  width: 500px;
+ border-left: 2px solid white;
+ margin-left: 300px;
+ 
+
+
+}
+.b2{
+  height: 50px;
+  width: 500px;
+  border-left: 2px solid white;
+}
+.b3{
+  height: 50px;
+  width: 500px;
+  border-left: 2px solid white;
+}
+#caraousol{
+  color: white;
+  
+
+  background-color: transparent;
+}
+.wrapper{
+  scroll-snap-type: y mandatory;
+  aspect-ratio: 16/9;
+  scroll-behavior: smooth;
+}
