@@ -1,6 +1,8 @@
 .box{
   height: 200px;
   width: 100%;
+  text-align: center;
+ 
   
 }
 a{
@@ -12,10 +14,11 @@ a{
 }
   #home{
     text-decoration: none;
-    font-size: 1.2 rem;
+    font-size: 2 rem;
     display: grid;
     color: rgb(180, 177, 177);
     cursor: pointer;
+    gap: 20px;
   }
   #home:hover{
     color: rgb(251, 252, 255);
@@ -32,8 +35,13 @@ a{
   body {
     min-height: 100vh;
     background-color: #0f172a;
-    overflow-x: hidden;
+    overflow-x: hidden ;
+    
   }
+ #menu{
+  width: 300px;
+  margin-left: 15px;
+ }
   
   ul {
     padding: 0;
@@ -59,6 +67,8 @@ a{
     transition: background 0.1s;
     float: right;
     margin-left: 500px;
+    box-shadow:  0 0 10px rgba(128, 128, 128, 0.8);
+   
   }
   
   .card:hover {
@@ -71,7 +81,7 @@ a{
     position: absolute;
     inset: 0;
     background:
-      radial-gradient(circle at calc(var(--x) * 1px) calc(var(--y) * 1px), hsl(0 100% 100% / 0.15), transparent 15vmin);
+      radial-gradient(circle at calc(var(--x) * 1px) calc(var(--y) * 1px), hsl(0 100% 100% / 0.15), transparent 35vmin);
     background-attachment: fixed;
     opacity: var(--active, 0);
     transition: opacity 0.10s;
@@ -99,11 +109,12 @@ a{
     bottom: 0.65rem;
     right: 0.65rem;
     font-weight: bold;
-    font-size: 2rem;
-    color: hsl(0 0% 100%);
+    font-size: 4rem;
+    color: #B0AFAF;
   }
   p{
     color: rgb(176, 175, 175);
+    font-size: 1.4rem;
   }
   .btn{
     height: 50px;
@@ -113,17 +124,41 @@ a{
     color: white;
     text-align: center;
     padding-top: 15px;
-    margin-top: 20px;
+    margin-top: 150px;
+    box-shadow:  0 0 20px rgba(128, 128, 128, 0.8);
+
   }
   .btn:hover{
     background-color: rgba(255, 255, 255, 0.112);
+    box-shadow:  none;
+
+  }
+  .socials{
+    display: flex;
+    margin-top: -800px;
+    margin-left: 35px ;
+
+  }
+  
+  .fa-brands{
+    color: #B0AFAF;
+    
+  }
+  .fa-brands:hover{
+    color: white !important;
+  }
+  .fa-regular{
+    color: #B0AFAF;
+  }
+  .fa-regular:hover{
+    color: white !important;
   }
   .contain{
     display: grid;
   }
 
 #one{
-  width: 600px;
+  width: 650px;
   height: 200px;
   color: white;
 }
@@ -132,27 +167,27 @@ a{
 .education{
   display: flex;
   float: right;
-  margin-top: 100px;
+  margin-top: 90px;
 
 }
 
 #edu{
-  width: 600px;
+  width: 650px;
   height: 200px;
   color: white;
   text-align: center;
-  column-gap: 100px;
+  margin-top: 10px;
 
 }
 li{
   gap: 50px;
 }
 #pro{
-  width: 600px;
+  width: 650px;
   height: 200px;
   color: #B0AFAF;
   text-align: center;
-  gap: 100px;
+  margin-top: 10px;
 
 }
 .project{
@@ -169,28 +204,125 @@ li{
   width: 500px;
  border-left: 2px solid white;
  margin-left: 300px;
+ font-size: 1.6rem;
  
-
 
 }
 .b2{
   height: 50px;
   width: 500px;
   border-left: 2px solid white;
+  font-size: 1.6rem;
 }
 .b3{
   height: 50px;
   width: 500px;
   border-left: 2px solid white;
+  font-size: 1.6rem;
 }
-#caraousol{
-  color: white;
-  
 
-  background-color: transparent;
+
+
+#element{
+  color: #B0AFAF;
+  font-size: 4rem;
 }
-.wrapper{
-  scroll-snap-type: y mandatory;
-  aspect-ratio: 16/9;
-  scroll-behavior: smooth;
+
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+.dot p {
+  display: inline-flex;
+  font-size: 5 rem;
+
+}
+.dot:hover{
+  color: white;
+} 
+.slide{
+  display: none;
+}
+#slate{
+  margin-right: 1050px;
+  margin-top: 15px;
+  box-shadow:  0 0 10px rgba(128, 128, 128, 0.8);
+
+}
+#secStyle{
+  margin-right: 600px;
+  margin-top: 15px;
+  box-shadow:  0 0 10px rgba(128, 128, 128, 0.8);
+
+}
+#thrstyle{
+  margin-right: 170px;
+  margin-top: 15px;
+  color: #B0AFAF;
+  box-shadow:  0 0 10px rgba(128, 128, 128, 0.8);
+
+}
+form{
+  height: 550px;
+  width: 700px;
+  box-shadow:  0 0 10px rgba(128, 128, 128, 0.8);
+  background-color: transparent;
+  text-align: center;
+  color: white;
+  margin-top: 800px;
+  margin-top: -20px;
+  margin-left: 400px;
+
+ 
+ 
+}
+form:hover{
+  box-shadow:  none;
+  background-color: rgba(183, 174, 174, 0.14);
+}
+#name{
+  width: 280px;
+  height: 45px;
+  border: 1px solid black;
+  box-shadow:  0 0 10px rgba(128, 128, 128, 0.8);
+  border-radius: 2cqi;
+
+}
+#mail{
+  width: 280px;
+  height: 45px;
+  border: 1px solid black;
+  box-shadow:  0 0 30px rgba(128, 128, 128, 0.868);
+  border-radius: 2cqi;
+
+}
+#num{
+  width: 280px;
+  height: 45px;
+  border: 1px solid black;
+  box-shadow:  0 0 10px rgba(128, 128, 128, 0.8);
+  border-radius: 2cqi;
+
+}
+#msg{
+  width: 400px;
+  height: 85px;
+  border: 1px solid black;
+  box-shadow:  0 0 10px rgba(128, 128, 128, 0.8);
+  border-radius: 2cqi;
+
+}
+#bn{
+  width: 200px;
+  height: 65px;
+  background-color: rgb(41, 92, 222);
+  border-radius: 5%;
+}
+#bn:hover{
+  background-color: rgb(32, 73, 176);
 }
