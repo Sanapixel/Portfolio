@@ -55,6 +55,7 @@ a{
   .main {
     width: 80ch;
     max-width: 100%;
+    margin-left: 55%;
   
   }
   
@@ -115,6 +116,9 @@ a{
   p{
     color: rgb(176, 175, 175);
     font-size: 1.4rem;
+    padding: 0 10 10 10px;
+    padding-left: 15px;
+    padding-right: 15px;
   }
   .btn{
     height: 50px;
@@ -135,7 +139,7 @@ a{
   }
   .socials{
     display: flex;
-    margin-top: -800px;
+   margin-top: -10px;
     margin-left: 35px ;
 
   }
@@ -155,6 +159,7 @@ a{
   }
   .contain{
     display: grid;
+    height: 100%;
   }
 
 #one{
@@ -192,18 +197,20 @@ li{
 }
 .project{
   margin-top: 1100px;
+
 }
 .rest{
   display: flex;
-  gap: 100px;
+  gap: 50px;
   justify-content: center;
+  z-index: -1;
 
 }
 .b1{
   height: 50px;
   width: 500px;
  border-left: 2px solid white;
- margin-left: 300px;
+ margin-right: -120px;
  font-size: 1.6rem;
  
 
@@ -212,12 +219,14 @@ li{
   height: 50px;
   width: 500px;
   border-left: 2px solid white;
+  margin-right: -150px;
   font-size: 1.6rem;
 }
 .b3{
   height: 50px;
   width: 500px;
   border-left: 2px solid white;
+  margin-right: -300px;
   font-size: 1.6rem;
 }
 
@@ -249,34 +258,40 @@ li{
   display: none;
 }
 #slate{
-  margin-right: 1050px;
+  margin-right: 900px;
   margin-top: 15px;
   box-shadow:  0 0 10px rgba(128, 128, 128, 0.8);
 
 }
 #secStyle{
-  margin-right: 600px;
+  margin-right: 450px;
   margin-top: 15px;
   box-shadow:  0 0 10px rgba(128, 128, 128, 0.8);
 
 }
 #thrstyle{
-  margin-right: 170px;
+  margin-right: 50px;
   margin-top: 15px;
   color: #B0AFAF;
   box-shadow:  0 0 10px rgba(128, 128, 128, 0.8);
 
 }
 form{
-  height: 550px;
+  height: 600px;
   width: 700px;
   box-shadow:  0 0 10px rgba(128, 128, 128, 0.8);
   background-color: transparent;
   text-align: center;
   color: white;
-  margin-top: 800px;
-  margin-top: -20px;
-  margin-left: 400px;
+  margin-top: 5px;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 1.1rem;
+
+  margin-left: 280px;
+  margin-right: 50px;
+  float: right;
+  margin-bottom: 20px;
+  z-index: -1;
 
  
  
@@ -291,6 +306,9 @@ form:hover{
   border: 1px solid black;
   box-shadow:  0 0 10px rgba(128, 128, 128, 0.8);
   border-radius: 2cqi;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 1.1rem;
+
 
 }
 #mail{
@@ -299,6 +317,9 @@ form:hover{
   border: 1px solid black;
   box-shadow:  0 0 30px rgba(128, 128, 128, 0.868);
   border-radius: 2cqi;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 1.1rem;
+
 
 }
 #num{
@@ -307,6 +328,9 @@ form:hover{
   border: 1px solid black;
   box-shadow:  0 0 10px rgba(128, 128, 128, 0.8);
   border-radius: 2cqi;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 1.1rem;
+
 
 }
 #msg{
@@ -314,7 +338,9 @@ form:hover{
   height: 85px;
   border: 1px solid black;
   box-shadow:  0 0 10px rgba(128, 128, 128, 0.8);
-  border-radius: 2cqi;
+  border-radius: 1cqi;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 1.1rem;
 
 }
 #bn{
@@ -322,7 +348,20 @@ form:hover{
   height: 65px;
   background-color: rgb(41, 92, 222);
   border-radius: 5%;
+  color: white;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 1.1rem;
+  text-align: center;
+
+  
 }
 #bn:hover{
   background-color: rgb(32, 73, 176);
+  color: black;
+}
+.contain{
+  position: fixed;
+  top: 200px;
+  height: 100%;
+  z-index: 999;
 }
